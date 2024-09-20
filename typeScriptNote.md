@@ -75,3 +75,41 @@ An InterFace is a powerfull feature that allows you to define a contract for an 
 
 # [*] ----------- CLASS AND CONTRUCTORS --------------------
 There is a convention to use PascalCase (also known as UpperCamelCase) for class name. This mean that class name should start with a capital letter and each subsequent word in the class name should also begin with a capital letter. [Classes.ts]
+
+
+# [*] ----------- ACCESS MODIFIERS --------------------
+-> Access modifiers are keywords that control the visibility and accessibility of class members (properties and methods) from outside the class.
+-> They are used to enforce encapsulation and data hiding, which are important principles of object-oriented programming.
+-> There are three main access modifiers in TypeScript:
+    -> **public:** Members declared as public are accessible from anywhere, both within the class and from outside the class.
+    -> **private:** Members declared as private are only accessible within the class itself. They cannot be accessed from outside the class.
+    -> **protected:** Members declared as protected are accessible within the class and its subclasses (derived classes). They cannot be accessed from outside the class hierarchy.
+[AccessModifiers.ts]
+
+
+# [*] ----------- GETTER AND SETTER --------------------
+In TypeScript classes, you can use getter and setter methods to control the access and modification of class properties. Getter Methods allow you to retrieve the value of a property, while setter methods allow you to set the value of a property with additional validation or logig or validation.
+
+
+# [*] ----------- STATIC MEMBERS --------------------
+In TypeScript, static method  and properties belong to the class it self tather than to istances of the class. By making methods and properties static, we can access them directly from the class without needing to create an instance of the class. This is usefu for utility functions or properties that don't rely on instance-specific data [StaticMember.ts]
+
+
+# [*] ----------- ABSTRACT CLASSES --------------------
+Abstract classes provide a way to define common properties and methods that multiple derived classes can share. This promotes code reuse and helps establish acommon interface for related classes.
+
+Abstract classes focus on class inhertance and sharing common functionality, whereas the useContext hook in react focuses on managing global state and allowing  component to consume that state.
+
+
+# [*] ----------- TYPE vs INTERFACE --------------------
+Use **custome Type** when you need unions, intersections, or mapped types,
+Use **Interface** when defining object shapes or classes that adhere to a contract.
+
+**Interface** can extend other interface to inherit their members.
+**Custom Types** can use union and intersections for more complex types compositions.
+
+
+# [*] ----------- TYPE NARROWING OR TYPE SAFETY --------------------
+A typeof Gaurd in TypeScript lets you narrow down the type of a variable based on its runtime value. In TypeScript, type narrowing allows you to write type-safe code by ensuring you only operate on the correct type under certain circumstances. This is particularly useful with union types and generic types.[Type_Guard.ts]
+
+# [*] ----------- FUNCTION vs CLASS --------------------
