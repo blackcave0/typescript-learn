@@ -14,3 +14,4 @@ const favHobbies = (hobby) => {
 };
 favHobbies(['sport', 'basketball', 'hockey']);
 // favHobbies('just kidding')
+// JetBrains Mono, Menlo, Monaco, 
